@@ -25,6 +25,17 @@ body {
     flex-direction: column;
 }
 
+.introduction {
+    padding: 3rem;
+    color: white;
+    text-align: center;
+}
+
+h1, 
+p {
+    padding: 1rem;
+}
+
 
 
 
