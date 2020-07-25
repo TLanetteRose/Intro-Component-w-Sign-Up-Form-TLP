@@ -9,35 +9,45 @@
   
   <title>Frontend Mentor | Intro component with sign up form</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <!-- Author styles -->
+  <link rel="stylesheet" href="styles/component.css">
+
 </head>
 <body>
-
-  Learn to code by watching others
-
-  See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
-  but understanding how developers think is invaluable. 
-
-  Try it free 7 days then $20/mo. thereafter
-
-  First Name 
-  Last Name 
-  Email Address
-  Password
-
-  Claim your free trial 
-
-  By clicking the button, you are agreeing to our Terms and Services
-  
+  <div class="container">
+    <div class="introduction">
+      <h1>Learn to code by watching others</h1>
+      <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+        but understanding how developers think is invaluable. <p>
+    </div>
+    <div class="sign-up">
+      <div class="cta">
+        Try it free 7 days <span>then $20/mo. thereafter</span>
+      </div><!-- .cta -->
+      <div class="form">
+        <form action="" id="form__signup">
+          <input type="text" placeholder="First Name" id="ftname" name="firstname" class="fn-input" required>
+          <input type="text" placeholder="Last Name" id="ltname" name="lastname" class="ln-input" required>
+          <input type="email" placeholder="Email Address" id="email-address" class="em-input" required>
+          <input type="password" placeholder="Password" id="password" class="pw-input" required>
+        </form>
+      </div><!-- .form -->
+      <div class="btn-container">
+        <input class="button" type="submit" value="Claim your free trial">
+      </div><!-- .btn-container -->
+      <div class="terms">
+        <span>By clicking the button, you are agreeing to our <a href="#">Terms and Services</a></span>
+      </div>
+    </div><!-- .signup -->
+  </div><!-- .container -->
+ 
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="#">Your Name Here</a>.
     </p>
   </footer>
+
+
 </body>
 </html>
