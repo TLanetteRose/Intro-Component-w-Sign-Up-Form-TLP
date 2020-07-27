@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 * {
@@ -20,32 +21,35 @@ body {
 
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-}
+/* Default Design-- Mobile */
 
-.introduction {
-    padding: 3rem;
-    color: white;
-    text-align: center;
-}
+@media screen and (max-width: 900px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    .introduction {
+        padding: 3rem;
+        color: white;
+        text-align: center;
+    }
 
-h1, 
-p {
-    padding: 1rem;
-}
+    h1, 
+    p {
+        padding: 1rem;
+    }
 
 
 
 
 /* Attribution Style */
 
-.attribution {
-    font-size: 11px;
-    text-align: center;
-}
+    .attribution {
+        font-size: 11px;
+        text-align: center;
+    }
 
-.attribution a {
-    color: hsl(228, 45%, 44%);
+    .attribution a {
+        color: hsl(228, 45%, 44%);
+    }
 }
