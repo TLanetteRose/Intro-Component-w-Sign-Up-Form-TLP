@@ -1,6 +1,18 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
+:root {
+    /* Primary */
+    --red: hsl(0, 100%, 74%);
+    --green: hsl(154, 59%, 51%);
+    /* Accent */
+    --blue: hsl(248, 32%, 49%);
+    /* Neutral */
+    --dk-blue: hsl(249, 10%, 26%);
+    --grayish-blue: hsl(246, 25%, 77%); 
+}
+
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -17,7 +29,7 @@ body {
     flex-direction: column;
     background-image: url(/images/bg-intro-mobile.png);
     background-position: cover;
-    background-color: hsl(0, 100%, 74%);
+    background-color: var(--red);
 
 }
 
@@ -39,6 +51,32 @@ body {
         padding: 1rem;
     }
 
+    /* Form Styling */
+
+
+
+    .form-control img {
+        visibility: hidden;
+    }
+    .form-control .errorMessage {
+        visibility: hidden;
+    }
+    .form-control .error {
+        overflow: visible;
+    }
+
+    .form-control.error input {
+        border-color: var(--red);
+        border-width: 2px;
+    }
+
+    .form-control.error img {
+        visibility: visible;
+    }
+
+    .form-control.error .errorMessage {
+        visibility: visible;
+    }
 
 
 

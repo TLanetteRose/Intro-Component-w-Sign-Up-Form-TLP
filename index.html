@@ -26,26 +26,30 @@
         <p><em>Try it free 7 days</em> then $20/mo. thereafter</p>
       </div><!-- .cta-alert -->
       
-      <form action="" class="form" id="form__signup">
+      <form action="/action_page.php" target="_blank" method="post" class="form__signup" id="form">
         <div class="form-control">
-          <input type="text" id="firstname" placeholder="First Name"  name="firstname" required />
+          <input type="text" id="first-name" placeholder="First Name"  name="first_name" required />
+          <img src="images/icon-error.svg" alt="error icon">
           <p class="errorMessage">First Name cannot be empty</p>
         </div><!-- .form-control -->
         <div class="form-control">
-          <input type="text" placeholder="Last Name" id="lastname" name="lastname" required />
+          <input type="text" placeholder="Last Name" id="last-name" name="last_name" required />
+          <img src="images/icon-error.svg" alt="error icon">
           <p class="errorMessage">Last Name cannot be empty</p>
         </div><!-- .form-control -->
         <div class="form-control">
-          <input type="email" placeholder="Email Address" id="email-address" required />
+          <input type="email" placeholder="Email Address" id="email" required />
+          <img src="images/icon-error.svg" alt="error icon">
           <p class="errorMessage">Looks like this is not an email.</p>
         </div><!-- .form-control -->
         <div class="form-control">
-          <input type="password" placeholder="Password" id="password" required />
+          <input type="password" placeholder="Password" id="password" name="password" required />
+          <img src="images/icon-error.svg" alt="error icon">
           <p class="errorMessage">Passeord cannot be empty.</p>
         </div><!-- .form-control -->
 
         <button class="submit-button">
-          Claim your free trial"
+          Claim your free trial
         </button><!-- .submit-button -->
         <p class="terms">By clicking the button, you are agreeing to our <a href="#">Terms and Services</a></p>
       </form>
