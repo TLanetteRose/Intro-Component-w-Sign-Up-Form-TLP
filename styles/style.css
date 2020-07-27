@@ -55,30 +55,8 @@ body {
 
 
 
-    .form-control img {
-        visibility: hidden;
-    }
-    .form-control .errorMessage {
-        visibility: hidden;
-    }
-    .form-control .error {
-        overflow: visible;
-    }
-
-    .form-control.error input {
-        border-color: var(--red);
-        border-width: 2px;
-    }
-
-    .form-control.error img {
-        visibility: visible;
-    }
-
-    .form-control.error .errorMessage {
-        visibility: visible;
-    }
-
-
+    
+    
 
 /* Attribution Style */
 
