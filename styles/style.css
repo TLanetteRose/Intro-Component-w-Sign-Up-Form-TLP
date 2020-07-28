@@ -30,7 +30,6 @@ body {
     background-image: url(/images/bg-intro-mobile.png);
     background-position: cover;
     background-color: var(--red);
-
 }
 
 /* Default Design-- Mobile */
@@ -39,20 +38,35 @@ body {
     .container {
         display: flex;
         flex-direction: column;
+        min-height: calc(100vh - 17px);
+        position: relative;
     }
     .introduction {
         padding: 3rem;
         color: white;
         text-align: center;
     }
-
     h1, 
     p {
         padding: 1rem;
     }
 
     /* Form Styling */
-
+    .error {
+        position: absolute;
+        right: 15px;
+        top: 12px;
+        display: none;
+    }
+    .errorMessage {
+        text-align: right;
+        font-size: 11px;
+        color: var(--red);
+        font-style: italic;
+        font-weight: 500;
+        margin-top: 5px;
+        display: none;
+    }
 
 
     
