@@ -10,6 +10,7 @@
     /* Neutral */
     --dk-blue: hsl(249, 10%, 26%);
     --grayish-blue: hsl(246, 25%, 77%); 
+    --hover: hsl(248, 32%, 58%);
 }
 
 
@@ -41,25 +42,23 @@ body {
         position: relative;
     }
     .introduction {
-        padding: 3rem;
-        color: white;
-        text-align: center;
-    }
-    .introduction {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding: 100px;
+        padding: 3rem;
+        color: white;
+        text-align: center;
     }
     .introduction >:nth-child(1) {
         font-size: 3rem;
         font-weight: 600;
         color: white;
         line-height: 60px;
+        margin-top: 10px;
     }
     .introduction > :nth-child(2) {
         color: white;
-        margin-top: 40px;
+        margin-top: 20px;
     }
     .sign-up {
         z-index: 1;
@@ -71,7 +70,7 @@ body {
     .sign-up > button {
         width: 70%;
         height: 90px;
-        margin-top: -30px;
+        margin-top: -10px;
         margin-bottom: 15px;
         border: none;
         color: white;
@@ -95,11 +94,19 @@ body {
         z-index: -1;
         opacity: 0.3;
     }
-
-
+    .sign-up > button:hover {
+        background: var(--hover);
+    }
 
     /* Form Styling */
-
+    .form__container {
+        width: 75%;
+        margin-top: 30px;
+        background: white;
+        padding: 40px;
+        border-radius: 8px;
+        position: relative;
+    }
 
 
     .error {
