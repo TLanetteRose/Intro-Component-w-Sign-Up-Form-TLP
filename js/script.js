@@ -43,6 +43,31 @@ function checkInput() {
 
 }
 
+// Error message function
+function setErrorMsg(input) {
+    const formControl = input.parentElement;
+    const image = formControl.querySelector('.error');
+    const warning = formControl.querySelector('.errorMessage');
+
+    image.style.display = 'block';
+    warning.style.display = 'block';
+
+}
+
+// Success function
+function setSuccess(input) {
+    const formControl = input.parentElement;
+    const image = formControl.querySelector('.error');
+    const warning = formControl.querySelector('.errorMessage');
+
+    image.style.display = 'none';
+    warning.style.display = 'none';
+}
+
+// Check email validity
+function isEmail(email) {
+    return emailRegExp = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+}
 
 
 

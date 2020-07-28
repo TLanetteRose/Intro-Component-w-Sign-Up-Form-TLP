@@ -28,7 +28,6 @@ body {
     display: flex;
     flex-direction: column;
     background-image: url(/images/bg-intro-mobile.png);
-    background-position: cover;
     background-color: var(--red);
 }
 
@@ -46,15 +45,34 @@ body {
         color: white;
         text-align: center;
     }
-    h1, 
-    p {
-        padding: 1rem;
+    .introduction {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 100px;
     }
+    .introduction >:nth-child(1) {
+        font-size: 3rem;
+        font-weight: 600;
+        color: white;
+        line-height: 60px;
+    }
+    .introduction > :nth-child(2) {
+        color: white;
+        margin-top: 40px;
+    }
+    .sign-up {
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        
+    }
+
 
     /* Form Styling */
 
 
-    
+
     .error {
         position: absolute;
         right: 15px;
