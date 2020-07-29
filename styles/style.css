@@ -11,6 +11,7 @@
     --dk-blue: hsl(249, 10%, 26%);
     --grayish-blue: hsl(246, 25%, 77%); 
     --hover: hsl(248, 32%, 58%);
+    --hover-red: hsl(0, 77%, 57%);
 }
 
 
@@ -33,17 +34,19 @@ body {
 }
 
 a:link, footer > p > a:link {
-    color: var(--dk-blue);
+    color: var(--red);
 } 
 a:visited,
-a:active,
+a:active {
+    color: hsl(0, 77%, 57%);
+}
 footer > p > a:visited,
 footer > p > a:active {
     color: var(--blue);
 }
 a:hover,
 footer > p > a:hover {
-    color: var(--grayish-blue);
+    color: var(--dk-blue);
 }
 
 /* Default Design-- Mobile */
@@ -190,8 +193,6 @@ footer > p > a:hover {
         height: 100px;
         margin-top: 50px;
     }
-    
-    
 
 /* Attribution Style */
 
@@ -199,9 +200,13 @@ footer > p > a:hover {
         font-size: 0.75rem;
         text-align: center;
     }
-
     .attribution a {
         color: hsl(228, 45%, 44%);
     }
+}
+
+@media screen and (max-width: 1100px) {
+   
+
 }
 
