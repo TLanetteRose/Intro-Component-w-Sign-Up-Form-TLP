@@ -51,7 +51,7 @@ footer > p > a:hover {
 
 /* Default Design-- Mobile */
 
-@media screen and (max-width: 900px) {
+
     .container {
         display: flex;
         flex-direction: column;
@@ -84,7 +84,7 @@ footer > p > a:hover {
         justify-content: center;
         align-items: center;
     }
-    .sign-up > button {
+    .sign-up > .cta-alert{
         width: 70%;
         height: 90px;
         margin-top: 20px;
@@ -99,7 +99,7 @@ footer > p > a:hover {
         outline: none;
         background: var(--blue);
     }
-    .sign-up > button::after {
+    .sign-up > .cta-alert::after {
         content: "";
         position: absolute;
         width: 100%;
@@ -111,7 +111,7 @@ footer > p > a:hover {
         z-index: -1;
         opacity: 0.3;
     }
-    .sign-up > button:hover {
+    .sign-up > .cta-alert:hover {
         background: var(--hover);
     }
 
@@ -203,17 +203,41 @@ footer > p > a:hover {
     .attribution a {
         color: hsl(228, 45%, 44%);
     }
-}
 
-@media screen and (min-width: 901px) {
-   .container {
-       display: flex;
-   }
-   .introduction, .sign-up {
-       padding: 25px;
-       text-align: center;
-   }
-   
-
+@media screen and (min-width: 920px) {
+  .container {
+      flex-direction: row;
+      margin: auto;
+  } 
+  .introduction {
+      width: 50%;
+      padding: 5.5rem;
+      text-align: left;
+  }
+  .sign-up {
+      margin: auto;
+      padding: 3rem;
+  }
+  .sign-up > .cta-alert, .sign-up > .form__container {
+      width: 100%;
+  }
+  .sign-up > .cta-alert {
+      margin-bottom: 5px;
+      height: 60px; 
+      padding: 5px;
+  }
+  .introduction > :first-child {
+      font-size: 2.5rem;
+      line-height: initial;
+      margin-top: 40px;
+  }
+  .introduction > :nth-child(2) {
+      margin-top: 20px;
+  }
+  .form__container {
+      margin-top: 20px;
+      padding: 50px;
+  }
+  
 }
 
