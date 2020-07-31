@@ -205,7 +205,14 @@ footer > p > a:hover {
     }
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (min-width: 901px) {
+   .container {
+       display: flex;
+   }
+   .introduction, .sign-up {
+       padding: 25px;
+       text-align: center;
+   }
    
 
 }
