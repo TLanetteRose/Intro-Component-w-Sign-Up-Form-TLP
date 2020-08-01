@@ -29,8 +29,6 @@ body {
     sans-serif;
     display: flex;
     flex-direction: column;
-    background: url("../images/bg-intro-mobile.png");
-    background-color: var(--red);
 }
 
 a:link, footer > p > a:link {
@@ -57,6 +55,18 @@ footer > p > a:hover {
         flex-direction: column;
         min-height: calc(100vh - 17px);
         position: relative;
+        background: url("../images/bg-intro-mobile.png");
+        
+    }
+    .container::after {
+        content: '';
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: var(--red);
+        z-index: -1;
     }
     .introduction {
         display: flex;
@@ -205,10 +215,8 @@ footer > p > a:hover {
     }
 
 @media screen and (min-width: 920px) {
-    body {
-        background: url("../images/bg-intro-desktop.png");
-    }
   .container {
+      background: url("../images/bg-intro-desktop.png");
       flex-direction: row;
       margin: 0 50px auto;
   } 
