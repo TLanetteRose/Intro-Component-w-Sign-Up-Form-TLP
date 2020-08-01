@@ -29,7 +29,7 @@ body {
     sans-serif;
     display: flex;
     flex-direction: column;
-    background: url('./images/bg-intro-mobile.png');
+    background: url("../images/bg-intro-mobile.png");
     background-color: var(--red);
 }
 
@@ -206,7 +206,7 @@ footer > p > a:hover {
 
 @media screen and (min-width: 920px) {
     body {
-        background: url('./images/bg-intro-desktop.png');
+        background: url("../images/bg-intro-desktop.png");
     }
   .container {
       flex-direction: row;
