@@ -29,6 +29,8 @@ body {
     sans-serif;
     display: flex;
     flex-direction: column;
+    background: url("../images/bg-intro-mobile.png");
+    background-color: var(--red);
 }
 
 a:link, footer > p > a:link {
@@ -55,7 +57,7 @@ footer > p > a:hover {
         flex-direction: column;
         min-height: calc(100vh - 17px);
         position: relative;
-        background: url("../images/bg-intro-mobile.png");
+       
         
     }
     .container::after {
@@ -65,7 +67,6 @@ footer > p > a:hover {
         position: absolute;
         top: 0;
         left: 0;
-        background-color: var(--red);
         z-index: -1;
     }
     .introduction {
