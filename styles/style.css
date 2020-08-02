@@ -29,6 +29,7 @@ body {
     sans-serif;
     display: flex;
     flex-direction: column;
+    background: url("../images/bg-intro-mobile.png");
     background-color: var(--red);
 }
 
@@ -56,9 +57,7 @@ footer > p > a:hover {
         flex-direction: column;
         min-height: calc(100vh - 17px);
         position: relative;
-        background: url("../images/bg-intro-mobile.png");
-        background-size: contain;  
-        height: 100vh;
+       
     }
     .container::after {
         content: '';
