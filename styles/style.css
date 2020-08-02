@@ -216,8 +216,10 @@ footer > p > a:hover {
     }
 
 @media screen and (min-width: 920px) {
-  .container {
+  .body {
       background: url("../images/bg-intro-desktop.png");
+    }  
+  .container {
       flex-direction: row;
       margin: 0 50px auto;
   } 
